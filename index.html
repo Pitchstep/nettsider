@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>asdfgsadfasf</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background-color: #f0f0f0;
+    }
+    #sentence {
+      font-size: 24px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="sentence"></div>
+
+  <script>
+    const sentences = [
+      "hello",
+      "how are you",
+      "im good",
+      "what",
+      "hmmm",
+      "idk",
+      "brooo",
+      "xd",
+      "lol"
+    ];
+
+    const randomIndex = Math.floor(Math.random() * sentences.length);
+    document.getElementById("sentence").textContent = sentences[randomIndex];
+  </script>
+</body>
+</html>
