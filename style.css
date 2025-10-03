@@ -126,7 +126,7 @@ html {
     box-sizing: inherit;
 }
 body {
-    font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    font-family: 'Sarpanch', sans-serif;
     margin: 0;
     padding: 0;
     background: #181a1b;
@@ -336,3 +336,37 @@ footer {
 }
 
 /* elsker css så mye /*
+
+/* Base link styling */
+a {
+    color: #ffb6ff;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover and focus effects */
+a:hover,
+a:focus {
+    color: #ffffff;
+    text-shadow: 0 0 8px #ffb6ff;
+}
+
+/* Animated underline effect */
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, #ffb6ff, #a259ff);
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+a:hover::after,
+a:focus::after {
+    width: 100%;
+}
