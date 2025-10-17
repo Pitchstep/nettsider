@@ -1,13 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0'>
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>  
-    <h1>Hello, World</h1>
-    <p>Here is home page.</p>
+<body>
+
+  <!-- ===== Fullscreen Click-to-Enter ===== -->
+  <div id="enter-screen">
+    <div class="enter-text">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Click anywhere to enter</p>
+      
+    </div>
+  </div>
+
+  <!-- ===== Background Image ===== -->
+  <div id="bg-image"></div>
+
+  <!-- ===== Background Music ===== -->
+  <audio id="bg-music" src="music.mp3" loop></audio>
+
+  <!-- ===== Main Content ===== -->
+  <div id="main-content" class="hidden">
+
+    <!-- Profile Section -->
+    <section class="profile-card bobPulse">
+      <img src="https://via.placeholder.com/100" alt="Profile" class="avatar bobPulse">
+      <h1 class="bobPulse">Your Name</h1>
+      <p class="bobPulse">Front-End Developer • Designer</p>
+
+      <div class="badges">
+        <div class="badge bobPulse" data-tooltip="Web Development"><i data-lucide="code"></i></div>
+        <div class="badge bobPulse" data-tooltip="Design"><i data-lucide="palette"></i></div>
+        <div class="badge bobPulse" data-tooltip="Open Source"><i data-lucide="github"></i></div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="about bobPulse">
+      <h2>About Me</h2>
+      <p>Hello! I’m a web developer and designer passionate about creating interactive and sleek web experiences. I love experimenting with animations, badges, and small projects that show off my skills.</p>
+    </section>
+
+    <!-- Favorite Games -->
+    <section class="games bobPulse">
+      <h2>Favorite Games</h2>
+      <div class="game-list">
+        <div class="game-card bobPulse">Minecraft</div>
+        <div class="game-card bobPulse">Valorant</div>
+        <div class="game-card bobPulse">Zelda: BOTW</div>
+        <div class="game-card bobPulse">Stardew Valley</div>
+      </div>
+    </section>
+
+    <!-- Socials -->
+    <section class="socials bobPulse">
+      <h2>Socials</h2>
+      <div class="links">
+        <a href="#" class="icon-btn bobPulse" data-tooltip="Twitter"><i data-lucide="twitter"></i></a>
+        <a href="#" class="icon-btn bobPulse" data-tooltip="GitHub"><i data-lucide="github"></i></a>
+        <a href="#" class="icon-btn bobPulse" data-tooltip="Instagram"><i data-lucide="instagram"></i></a>
+        <a href="#" class="icon-btn bobPulse" data-tooltip="Email"><i data-lucide="mail"></i></a>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects bobPulse">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card bobPulse">
+          <h3>Project One</h3>
+          <p>Short description of your web project.</p>
+          <a href="#" target="_blank">View</a>
+        </div>
+        <div class="project-card bobPulse">
+          <h3>Project Two</h3>
+          <p>Another showcase project description.</p>
+          <a href="#" target="_blank">View</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bobPulse">© 2025 Your Name</footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
